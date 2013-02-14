@@ -1,0 +1,11 @@
+
+<h1>Listing User</h1>
+<%= form_for(@user, :url => "user") do |f| %>
+  <div class="field">
+    <%= f.label :user.name %><br />
+    <%= f.text_field :user.name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
